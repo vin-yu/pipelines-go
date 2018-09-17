@@ -30,7 +30,7 @@ steps:
         curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
         dep ensure
     fi
-    cd ./web
+    cd ./app
     go build -v .
   workingDirectory: '$(modulePath)'
   displayName: 'Get dependencies and run tests'
