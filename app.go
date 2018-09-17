@@ -39,7 +39,7 @@ func render(w http.ResponseWriter, tmpl string, pageVars PageVars) {
 	t, err := template.ParseFiles(tmpl)      
 
 	if err != nil { // if there is an error
-		log.Print("template parsing error: ", err) // log it
+		log.Print("edit 1:template parsing error: ", err) // log it
 	}
 
 	err = t.Execute(w, pageVars) //execute the template and pass in the variables to fill the gaps
