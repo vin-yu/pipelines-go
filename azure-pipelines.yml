@@ -54,7 +54,7 @@ steps:
     #dockerComposeFileArgs: # Optional
     #projectName: '$(Build.Repository.Name)' # Optional
     #qualifyImageNames: true # Optional
-    action: 'Run Services'
+    action: Run a Docker Compose command
     #additionalImageTags: # Optional
     #includeSourceTags: false # Optional
     #includeLatestTag: false # Optional
@@ -71,7 +71,7 @@ steps:
     #removeBuildOptions: false # Optional
     #baseResolveDirectory: # Optional
     #outputDockerComposeFile: '$(Build.StagingDirectory)/docker-compose.yml' # Required when action == Lock Services || Action == Combine Configuration
-    #dockerComposeCommand: # Required when action == Run A Docker Compose Command
+    dockerComposeCommand: build
     #dockerHostEndpoint: # Optional
     #nopIfNoDockerComposeFile: false # Optional
     #requireAdditionalDockerComposeFiles: false # Optional
