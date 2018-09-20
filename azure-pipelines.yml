@@ -35,6 +35,10 @@ steps:
   workingDirectory: '$(modulePath)'
   displayName: 'Get dependencies and run tests'
   
+- script: |
+    ls -l
+  workingDirectory: '$(modulePath)'
+  displayName: 'path name'
 
 # Docker Compose
 # Build, push or run multi-container Docker applications. Task can be used with Docker or Azure Container registry.
