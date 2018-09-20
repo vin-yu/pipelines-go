@@ -33,7 +33,7 @@ steps:
     cd ./app
     go build -v .
   workingDirectory: '$(modulePath)'
-  displayName: 'Get Dependencies and Build'
+  displayName: 'Get dependencies and Build'
 
 # Docker Compose
 # Build, push or run multi-container Docker applications. Task can be used with Docker or Azure Container registry.
@@ -54,8 +54,8 @@ steps:
   workingDirectory: '$(modulePath)'
   displayName: 'Pulling SQL Server Container and Setting up Database'
 
-  - script: |
+- script: |
     cd ./app
     go test -v .
   workingDirectory: '$(modulePath)'
-  displayName: 'Run tests'
+  displayName: 'Get dependencies and run tests'
