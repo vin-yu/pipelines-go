@@ -57,7 +57,7 @@ steps:
     #serviceName: # Required when action == Run A Specific Service
     #containerName: # Optional
     #ports: # Optional
-    #workingDirectory: # Optional
+    workingDirectory: '$(modulePath)' # Optional
     #entrypoint: # Optional
     #containerCommand: # Optional
     #detached: true # Optional
