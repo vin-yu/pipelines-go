@@ -38,6 +38,7 @@ steps:
 - script: |
     ls -l
     pwd
+    ECHO '$(modulePath)/flyway/docker-compose.yml'
   workingDirectory: '$(modulePath)'
   displayName: 'path name'
 
