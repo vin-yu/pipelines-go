@@ -44,7 +44,7 @@ steps:
     #dockerRegistryEndpoint: # Optional
     #azureSubscription: # Optional
     #azureContainerRegistry: # Optional
-    dockerComposeFile: ./flyway/docker-compose.yml 
+    dockerComposeFile: ./pipelines-go/flyway/docker-compose.yml 
     #additionalDockerComposeFiles: # Optional
     #dockerComposeFileArgs: # Optional
     #projectName: '$(Build.Repository.Name)' # Optional
@@ -57,7 +57,7 @@ steps:
     #serviceName: # Required when action == Run A Specific Service
     #containerName: # Optional
     #ports: # Optional
-    workingDirectory: '$(modulePath)' # Optional
+    #workingDirectory: # Optional
     #entrypoint: # Optional
     #containerCommand: # Optional
     #detached: true # Optional
