@@ -54,7 +54,7 @@ steps:
     #dockerComposeFileArgs: # Optional
     #projectName: '$(Build.Repository.Name)' # Optional
     #qualifyImageNames: true # Optional
-    action: 'run Services'
+    action: 'Run Services'
     #additionalImageTags: # Optional
     #includeSourceTags: false # Optional
     #includeLatestTag: false # Optional
