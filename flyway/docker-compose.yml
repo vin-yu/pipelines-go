@@ -11,7 +11,7 @@ services:
     depends_on:
       - db
   db:
-    image: mssql-rhel
+    image: microsoft/mssql-server-linux
     environment:
       SA_PASSWORD: "1234qwerASDF"
       ACCEPT_EULA: "Y"
