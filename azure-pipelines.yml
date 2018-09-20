@@ -38,7 +38,6 @@ steps:
 - script: |
     ls -l
     pwd
-    ECHO '$(modulePath)/flyway/docker-compose.yml'
   workingDirectory: '$(modulePath)'
   displayName: 'path name'
 
@@ -50,7 +49,7 @@ steps:
     #dockerRegistryEndpoint: # Optional
     #azureSubscription: # Optional
     #azureContainerRegistry: # Optional
-    dockerComposeFile: '$(modulePath)/flyway/docker-compose.yml' 
+    dockerComposeFile: $(modulePath)/flyway/docker-compose.yml
     #additionalDockerComposeFiles: # Optional
     #dockerComposeFileArgs: # Optional
     #projectName: '$(Build.Repository.Name)' # Optional
